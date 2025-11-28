@@ -1,0 +1,387 @@
+/* GLOBAL STYLES */
+:root {
+    --primary: #4A6CF7;
+    --dark: #222;
+    --light: #f5f5f5;
+    --text: #555;
+    --radius: 12px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: var(--light);
+    color: var(--text);
+}
+
+h1, h2, h3 {
+    color: var(--dark);
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 10%;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--dark);
+    font-weight: 500;
+}
+
+/* HERO */
+.hero {
+    height: 70vh;
+    background: url("images/banner.jpg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #080808;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+}
+.btn {
+    display: inline-block;
+    padding: 0.7rem 1.5rem;
+    background: var(--primary);
+    color: #fff;
+    margin-top: 1rem;
+    border-radius: var(--radius);
+    text-decoration: none;
+}
+
+/* SECTION TITLE */
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin: 2rem 0;
+}
+
+/* COURSES GRID */
+.course-grid {
+    padding: 0 10%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.course-card {
+    background: #fff;
+    padding: 1rem;
+    border-radius: var(--radius);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.course-card img {
+    width: 100%;
+    border-radius: var(--radius);
+}
+
+/* TESTIMONIALS */
+.test-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5rem;
+    padding: 0 10%;
+}
+
+.test-card {
+    background: #fff;
+    padding: 1rem;
+    border-radius: var(--radius);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* PRICING */
+.price-grid {
+    padding: 0 10%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5rem;
+}
+
+.price-card {
+    background: #fff;
+    padding: 2rem;
+    border-radius: var(--radius);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.price-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.highlight {
+    border: 2px solid var(--primary);
+}
+
+/* CONTACT FORM */
+.contact-form {
+    padding: 0 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+input, textarea {
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: var(--radius);
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    background: #fff;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 1024px) {
+    .course-grid,
+    .test-grid,
+    .price-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contact-form {
+        padding: 0 10%;
+    }
+}
+
+@media (max-width: 600px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .course-grid,
+    .test-grid,
+    .price-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        height: 50vh;
+    }
+}/* GLOBAL STYLES */
+:root {
+    --primary: #4A6CF7;
+    --dark: #222;
+    --light: #f5f5f5;
+    --text: #555;
+    --radius: 12px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: var(--light);
+    color: var(--text);
+}
+
+h1, h2, h3 {
+    color: var(--dark);
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 10%;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--dark);
+    font-weight: 500;
+}
+
+/* HERO */
+.hero {
+    height: 70vh;
+    background: url("images/banner.jpg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+}
+.btn {
+    display: inline-block;
+    padding: 0.7rem 1.5rem;
+    background: var(--primary);
+    color: #fff;
+    margin-top: 1rem;
+    border-radius: var(--radius);
+    text-decoration: none;
+}
+
+/* SECTION TITLE */
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin: 2rem 0;
+}
+
+/* COURSES GRID */
+.course-grid {
+    padding: 0 10%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.course-card {
+    background: #fff;
+    padding: 1rem;
+    border-radius: var(--radius);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.course-card img {
+    width: 100%;
+    border-radius: var(--radius);
+}
+
+/* TESTIMONIALS */
+.test-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5rem;
+    padding: 0 10%;
+}
+
+.test-card {
+    background: #fff;
+    padding: 1rem;
+    border-radius: var(--radius);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* PRICING */
+.price-grid {
+    padding: 0 10%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5rem;
+}
+
+.price-card {
+    background: #fff;
+    padding: 2rem;
+    border-radius: var(--radius);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.price-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.highlight {
+    border: 2px solid var(--primary);
+}
+
+/* CONTACT FORM */
+.contact-form {
+    padding: 0 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+input, textarea {
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: var(--radius);
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    background: #fff;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 1024px) {
+    .course-grid,
+    .test-grid,
+    .price-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contact-form {
+        padding: 0 10%;
+    }
+}
+
+@media (max-width: 600px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .course-grid,
+    .test-grid,
+    .price-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        height: 50vh;
+    }
+}
