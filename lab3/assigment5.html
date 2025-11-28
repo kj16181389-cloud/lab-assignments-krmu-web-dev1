@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="logo">MyPortfolio</div>
+        <nav class="nav">
+            <a href="#hero">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section id="hero" class="hero">
+        <div class="hero-text">
+            <h1>Hello, I'm <span class="highlight">Krishan</span></h1>
+            <h2 class="animated-role">Full Stack Developer</h2>
+            <p>Building responsive and modern websites using HTML, CSS and JavaScript.</p>
+            <button class="btn">Download CV</button>
+        </div>
+
+        <div class="hero-img">
+            <img src="https://via.placeholder.com/350" alt="Profile Image">
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about">
+        <h2 class="section-title">About Me</h2>
+        <p>
+            I am a passionate developer with experience in designing responsive layouts,
+            animations, and modern UI using HTML, CSS, JavaScript and frameworks.
+        </p>
+    </section>
+
+    <!-- SKILLS (CSS GRID) -->
+    <section id="skills" class="skills">
+        <h2 class="section-title">Skills</h2>
+
+        <div class="grid">
+            <div class="card">HTML</div>
+            <div class="card">CSS</div>
+            <div class="card">JavaScript</div>
+            <div class="card">React</div>
+            <div class="card">Node.js</div>
+            <div class="card">Python</div>
+        </div>
+    </section>
+
+    <!-- PROJECTS (CSS GRID) -->
+    <section id="projects" class="projects">
+        <h2 class="section-title">Projects</h2>
+
+        <div class="grid">
+            <div class="project-card">
+                <h3>Portfolio Website</h3>
+                <p>Responsive design, Flexbox + Grid, animations.</p>
+            </div>
+            <div class="project-card">
+                <h3>Calculator App</h3>
+                <p>Built using JavaScript and DOM manipulation.</p>
+            </div>
+            <div class="project-card">
+                <h3>Landing Page</h3>
+                <p>Modern UI with transitions and effects.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT FORM -->
+    <section id="contact" class="contact">
+        <h2 class="section-title">Contact Me</h2>
+
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Email Address">
+            <textarea placeholder="Message"></textarea>
+            <button class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>© 2024 MyPortfolio | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
